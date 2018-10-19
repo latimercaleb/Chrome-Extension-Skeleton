@@ -1,2 +1,2 @@
-# Chrome-Extension-Skeleton-
-An outline of a Chrome extension for logging
+# Chrome Extension Skeleton
+Chrome extension for testing payment form in web app

@@ -1,0 +1,23 @@
+{
+  "name": "Autofill",
+  "version": "2.0",
+  "description": "A tool to autofill values on form",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "./placeholder.png",
+    "default_title": "Autofill"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [{
+    "matches": ["https://*/*" ],
+    "run_at": "document_end",
+    "js": ["contentScript.js"]
+  }]
+}
